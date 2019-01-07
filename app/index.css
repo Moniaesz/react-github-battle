@@ -10,6 +10,11 @@ li {
 	list-style-type: none;
 }
 
+a {
+	color: orange;
+	text-decoration: none;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -65,4 +70,32 @@ li {
 
 .nav li {
 	margin-right: 15px;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.button {
+	background :#404040;
+	color: white;
+	border: none;
+	font-size: 16px;
+	width: 200px;
+	display: block;
+	border-radius: 5px;
+	padding: 7px 0;
+	margin-top: 10px auto;
+	text-align: center;
+}
+
+.button:hover:enabled {
+	background: black;
+}
+
+.button:active {
+	transform: translateY(1px);
 }
