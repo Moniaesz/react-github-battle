@@ -88,7 +88,7 @@ a {
 	display: block;
 	border-radius: 5px;
 	padding: 7px 0;
-	margin-top: 10px auto;
+	margin: 20px auto;
 	cursor: pointer;
 	text-align: center;
 }
@@ -134,3 +134,22 @@ a {
 	font-size: 30px;
 	font-weight: 200;
  }
+
+.battle__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reset {
+	border: none;
+	background: transparent;
+	color: orange;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.reset:hover {
+	cursor: pointer;
+}
