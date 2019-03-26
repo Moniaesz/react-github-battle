@@ -11,7 +11,7 @@ li {
 }
 
 a {
-	color: orange;
+	color: #77316f;
 	text-decoration: none;
 }
 
@@ -144,7 +144,7 @@ a {
 .reset {
 	border: none;
 	background: transparent;
-	color: orange;
+	color:  #77316f;
 	display: block;
 	width: 100%;
 	text-align: center;
