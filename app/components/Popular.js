@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = require('prop-types');
-var api = require('../utils/api')
+var api = require('../utils/api');
+var Loading = require('./Loading');
 
 //Stateless Functional Component
 function SelectLanguage (props) {
@@ -11,7 +12,7 @@ function SelectLanguage (props) {
 		{languages.map(function (language) {
 			return (
 				<li
-					style={ language === props.selectedLanguage ? { color: ' #77316f'} : null }
+					style={ language === props.selectedLanguage ? { color: '#d1113e'} : null }
 					onClick={props.onSelect.bind(null, language)}
 					key={language}>
 					{language}
@@ -103,7 +104,7 @@ class Popular extends React.Component {
 					onSelect={this.updateLanguage}
 				/>
 				{!this.state.repos
-					? <p>LOADING...</p>
+					? <Loading />
 					: <RepoGrid repos={this.state.repos} />}
 			</div>
 		)
