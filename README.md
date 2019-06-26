@@ -1,8 +1,8 @@
 ### React Github Battle
 
-App utilizes mostly ES5 syntax to be fully refactored later on, after [Modern JavaScript course](https://tylermcginnis.com/courses/modern-javascript/).
-
 Implementation of Github Battle App, made along with [React Fundamental Course](https://tylermcginnis.com/courses/react-fundamentals/).
+
+ES6 code refacoring was made after [Modern JavaScript course](https://tylermcginnis.com/courses/modern-javascript/).
 
 ##### sidenote
 react-github-battle utilizes Github API, that can be contacted without API key but with some limits. If it's the case (You get error and can't fetch Github users data):
