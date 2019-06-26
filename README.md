@@ -1,19 +1,15 @@
 ### React Github Battle
 
-===/ app is not responsive yet /===
-
-App utilizes mostly ES5 syntax to be full refactored later on, after Modern JavaScript course.
-
+App utilizes mostly ES5 syntax to be fully refactored later on, after [Modern JavaScript course](https://tylermcginnis.com/courses/modern-javascript/).
 
 Implementation of Github Battle App, made along with [React Fundamental Course](https://tylermcginnis.com/courses/react-fundamentals/).
 
 ##### sidenote
-
 react-github-battle utilizes Github API, that can be contacted without API key but with some limits. If it's the case (You get error and can't fetch Github users data):
 
 * wait few hours
 or
-* register and get API Client ID and Client Secret to be inserted in api.js file, that can be found in utils app folder.
+* register and get API Client ID and Client Secret to be inserted in api.js file, that can be found in utils app folder. You can register your app [here](https://github.com/settings/applications/new)
 
 
 Live demo can be seen [here](https://github-battle-react-2be0f.firebaseapp.com/).
