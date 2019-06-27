@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const id = '';
 const sec = '';
@@ -42,16 +42,15 @@ function sortPlayers(players) {
 	return players.sort((a,b) => b.score - a.score);
 }
 
-module.exports = {
-	battle (players) {
-		return axios.all(players.map(getUserData))
-		.then(sortPlayers)
-		.catch(handleError);
-	},
-	fetchPopularRepos (lang) {
-		const encodedURI = window.encodeURI(`https://api.github.com/search/repositories?q=stars:>1+language:${lang}&sort=stars&order=desc&type=Repositories`);
+export function battle (players) {
+	return axios.all(players.map(getUserData))
+	.then(sortPlayers)
+	.catch(handleError);
+}
 
-		return axios.get(encodedURI)
-			.then(( {data} ) => data.items);
-	}
-};
+export function fetchPopularRepos (lang) {
+	const encodedURI = window.encodeURI(`https://api.github.com/search/repositories?q=stars:>1+language:${lang}&sort=stars&order=desc&type=Repositories`);
+
+	return axios.get(encodedURI)
+		.then(( {data} ) => data.items);
+}
