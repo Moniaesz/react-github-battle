@@ -54,22 +54,16 @@ SelectLanguage.propTypes = {
   onSelect: PropTypes.func.isRequired,
 }
 class Popular extends React.Component {
-	constructor (props) {
-		super(props);
-
-		this.state = {
-			selectedLanguage: 'All',
-			repos: null
-		};
-
-		this.updateLanguage = this.updateLanguage.bind(this);
+	state = {
+		selectedLanguage: 'All',
+		repos: null
 	}
 
 	componentDidMount () {
 		this.updateLanguage(this.state.selectedLanguage);
 	}
 
-	updateLanguage(language) {
+	updateLanguage = (language) => {
     this.setState(() => ({
       selectedLanguage: language,
       repos: null
